@@ -7,5 +7,6 @@ export default defineConfig({
   root:"./src/",
   build: {
     outDir:"../"
-  }
+  },
+  base:"http://project.wocai.de/beijing-popup-map/"
 })
