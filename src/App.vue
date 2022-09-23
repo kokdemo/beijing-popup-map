@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import { Scene, Mapbox } from "@antv/l7";
 import { Choropleth } from "@antv/l7plot";
 import './style.css'
-import mapData from './assets/map-20220920.js'
+import mapData from './assets/map-20220923.js'
 
 onMounted(() => {
   const scene = new Scene({
@@ -82,7 +82,7 @@ onMounted(() => {
     <h2 class="text-sm">北京健康宝弹窗地图</h2>
     <span>基于疾控中心数据，告知你去了哪里可能会弹窗3</span><br>
     <span>红色全市弹、黄色部分区弹；新疆、西藏、海南全域都会弹</span><br>
-    <span>更新时间：2022-09-20 <a href="https://mp.weixin.qq.com/s/FKDIA3tnPe_rfmb-D1gHeA">数据来源</a></span>
+    <span>更新时间：2022-09-23 <a href="https://mp.weixin.qq.com/s/vmMoHbVxUV5ML9i-mkvpsg">数据来源</a></span>
   </div>
   <a href="https://github.com/kokdemo/beijing-popup-map" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80"
       viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
