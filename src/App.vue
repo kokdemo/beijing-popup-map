@@ -16,6 +16,25 @@ onMounted(() => {
     })
   });
   scene.on("loaded", () => {
+    const provinceChoro = new Choropleth({
+      viewLevel: {
+        // level: "country",
+        adcode: 100000,
+        granularity: "province"
+      },
+      chinaBorder:false,
+      color: {
+        field: "value",
+        value: ["#FDE68A", "#EF4444"],
+        scale: { type: "quantize" }
+      },
+      style: {
+        opacity: 1,
+        stroke: "#999",
+        lineWidth: 0.5,
+        lineOpacity: 1
+      },
+    })
     const choropleth = new Choropleth({
       source: {
         data: mapData,
@@ -38,7 +57,7 @@ onMounted(() => {
       style: {
         opacity: 1,
         stroke: "#ccc",
-        lineWidth: 0.6,
+        lineWidth: 0.1,
         lineOpacity: 1
       },
       label: {
@@ -70,6 +89,8 @@ onMounted(() => {
       },
       chinaBorder: false
     });
+    
+    provinceChoro.addToScene(scene)
     choropleth.addToScene(scene);
   });
 })
