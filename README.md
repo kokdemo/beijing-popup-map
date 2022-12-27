@@ -8,3 +8,5 @@
 大家都知道，北京健康宝弹窗会对外地访问行程出现弹窗三，一旦出现弹窗，将无法乘坐火车、飞机、汽车进京。
 
 我将北京疾控的官方文章整理成了更加可视化的地图，借助antv的库做了一个小页面出来。
+
+![](https://github.com/kokdemo/beijing-popup-map/blob/main/%E5%81%A5%E5%BA%B7%E5%AE%9D%E6%88%AA%E5%9B%BE.png)
